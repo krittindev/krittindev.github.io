@@ -21,13 +21,10 @@
 .cl_2 *{color: var(--theme-color-2);}
 
 /* BG */
-.bg{
-	width: 100%;
-}
-.bgimg{
-	background: url(../img/bg/texture.jpg);
-	background-attachment: fixed;
-}
+.bg{width: 100%;}
+.bgimg{background: url(../img/bg/texture.jpg);}
+.bgpattern{background: url(../img/bg/pattern.svg);}
+.bgfix{background-attachment: fixed;}
 
 /* CONTAINER */
 .container{
@@ -94,11 +91,13 @@ nav > ul > li > a:hover{background:  var(--theme-bg-color-2);}
 .vh40{height: 40vh;}
 .vh50{height: 50vh;}
 .g1{
+	float: left;
 	overflow: auto;
 	width: 100%;
 	margin: 2vh 0;
 }
 .g2{
+	overflow: auto;
 	float: left;
 	display: block;
 	width: 47.5%;
@@ -111,6 +110,7 @@ nav > ul > li > a:hover{background:  var(--theme-bg-color-2);}
 	margin-left: 2.5%;
 }
 .g3{
+	overflow: auto;
 	float: left;
 	display: block;
 	width: 30%;
