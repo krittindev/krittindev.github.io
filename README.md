@@ -1,1 +1,0 @@
-# tuliptgr.github.io
