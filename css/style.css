@@ -38,7 +38,7 @@ header{
 	width: 30%;
 }
 header > span{
-	font-size: 40px;
+	font-size: 2em;
 }
 
 /* NAV */
@@ -70,30 +70,26 @@ nav > ul > li > a:hover{background:  var(--theme-bg-color-2);}
 	padding: 20px 0;
 }
 .intro > div > h1{
-	font-size: 60px;
+	font-size: 4em;
 }
 .intro > div > p{
-	font-size: 30px;
+	font-size: 2em;
 }
 .intro > .divimg{
 	float: right;
-	display: block;
-	font-size: 50px;
+	font-size: 3em;
 	width: 60%;
+	padding-top: 25%;
 	text-align: center;
-	padding: 20px 0;
+	position: relative;
 }
 
 /* G */
-.vh10{height: 10vh;}
-.vh20{height: 20vh;}
-.vh30{height: 30vh;}
-.vh40{height: 40vh;}
-.vh50{height: 50vh;}
 .g1{
 	float: left;
 	overflow: auto;
 	width: 100%;
+	padding-top: 25%;
 	margin: 2vh 0;
 }
 .g2{
@@ -101,6 +97,7 @@ nav > ul > li > a:hover{background:  var(--theme-bg-color-2);}
 	float: left;
 	display: block;
 	width: 47.5%;
+	padding-top: 20%;
 	margin: 2vh 0;
 }
 .g2l{
@@ -114,6 +111,7 @@ nav > ul > li > a:hover{background:  var(--theme-bg-color-2);}
 	float: left;
 	display: block;
 	width: 30%;
+	padding-top: 30%;
 	margin: 2vh 0;
 }
 .g3m{
