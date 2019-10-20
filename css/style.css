@@ -85,35 +85,23 @@ nav > ul > li > a:hover{background:  var(--theme-bg-color-2);}
 
 /* G */
 .g1{
-	float: left;
 	overflow: auto;
-	width: 100%;
-	margin: 2vh 0;
+	float: left;
+	width: 97.5%;
+	margin: 1.25% 1.25%;
 }
 .g2{
 	overflow: auto;
 	float: left;
-	display: block;
 	width: 47.5%;
-	margin: 2vh 0;
-}
-.g2l{
-	margin-right: 2.5%;
-}
-.g2r{
-	margin-left: 2.5%;
+	margin: 1.25% 1.25%;
 }
 .g3{
 	overflow: auto;
 	float: left;
-	display: block;
 	width: 30%;
-	margin: 2vh 0;
+	margin: calc(10%/2/3) calc(10%/2/3);
 }
-.g3m{
-	margin: 2vh 5%;
-}
-	
 
 /* FOOTER */
 footer{
