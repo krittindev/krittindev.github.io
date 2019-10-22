@@ -1,113 +1,182 @@
-/* VARIABLE */
-:root{
-	--theme-bg-color-1:#BDBDBD;
-	--theme-bg-color-2:#9E9E9E;
-	--theme-bg-color-3:#F5F5F5;
-	--theme-color-1:#212121;
-	--theme-color-2:white;
-}
-*{
-	margin: 0;
-	padding: 0;
-	color: var(--theme-color-1);
+/* ROOT */
+
+:root {
+    --color1: #212121;
+    --color2: lightgray;
+    --mainbg: whitesmoke;
 }
 
-/* COLOR */
-.cl_bg_1{background: var(--theme-bg-color-1);}
-.cl_bg_2{background: var(--theme-bg-color-2);}
-.cl_bg_3{background: var(--theme-bg-color-3);}
-.cl_bg_red{background: #B71C1C; color:white;}
-.cl_1 *{color: var(--theme-color-1);}
-.cl_2 *{color: var(--theme-color-2);}
-
-/* BG */
-.bg{width: 100%;}
-.bgimg{background: url(../img/bg/texture.jpg);}
-.bgpattern{background: url(../img/bg/pattern.svg);}
-.bgfix{background-attachment: fixed;}
-
-/* CONTAINER */
-.container{
-	width: 70%;
-	margin: auto;
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--color1);
 }
+
+
+/* WRAPPER */
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
 
 /* HEADER */
-header{
-	float: left;
-	width: 30%;
-}
-header > span{
-	font-size: 2em;
+
+header {
+    width: 100%;
+    background: var(--color2);
 }
 
-/* NAV */
-nav{
-	width: 70%;
-	float: right;
-}
-nav > ul{
-	float: right;
-	overflow: auto;
-	list-style: none;
-}
-nav > ul > li{
-	float:left;
-}
-nav > ul > li > a{
-	margin-left: 10px;
-	display: block;
-	padding: 10px 20px;
-	text-decoration: none;
-	
-}
-nav > ul > li > a:hover{background:  var(--theme-bg-color-2);}
-
-/* INTRO */
-.intro{
-	width: 100%;
-	overflow: auto;
-	padding: 20px 0;
-}
-.intro > div > h1{
-	font-size: 4em;
-}
-.intro > div > p{
-	font-size: 2em;
-}
-.intro > .divimg{
-	float: right;
-	font-size: 3em;
-	width: 60%;
-	padding-top: 25%;
-	position: relative;
+header .logo {
+    float: left;
+    width: 25%;
 }
 
-/* G */
-.g1{
-	overflow: auto;
-	float: left;
-	width: 97.5%;
-	margin: 1.25% 1.25%;
+header .logo span {
+    font-size: 3em;
 }
-.g2{
-	overflow: auto;
-	float: left;
-	width: 47.5%;
-	margin: 1.25% 1.25%;
+
+
+/* --HEADER NAV */
+
+header nav {
+    float: left;
+    width: 75%;
 }
-.g3{
-	overflow: auto;
-	float: left;
-	width: 30%;
-	margin: calc(10%/2/3) calc(10%/2/3);
+
+header nav ul {
+    float: right;
+    list-style: none;
 }
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* --HEADER ARTICLE */
+
+header article {
+    float: left;
+    width: 40%;
+}
+
+header article h1 {
+    font-size: 3em;
+}
+
+header article p {
+    font-size: 2em;
+}
+
+header section {
+    float: left;
+    width: 60%;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+    background: var(--mainbg);
+}
+
 
 /* FOOTER */
-footer{
-	overflow: auto;
-	padding: 20px 0;
+
+footer {
+    background: var(--color2);
+    width: 100%;
 }
-footer > span{
-	float: right;
+
+
+/* --FOOTER NAV */
+
+footer nav {
+    float: left;
+    width: 70%;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    float: left;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    padding: 10px 20px;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer article {
+    float: left;
+    width: 30%;
+    padding: 10px 0;
+    text-align: right;
+}
+
+
+/* MEDIA QUERY */
+
+@media(max-width:1000px) {
+    .wrap {
+        width: auto;
+        margin: 0 2.5vh;
+    }
+}
+
+@media(max-width:500px) {
+    header .logo {
+        width: 100%;
+        text-align: center;
+    }
+    header nav {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        float: none;
+    }
+    header nav ul li {
+        float: none;
+    }
+    header article {
+        width: 100%;
+    }
+    header section {
+        width: 100%;
+    }
+    footer nav {
+        width: 100%;
+        text-align: center;
+    }
+    footer nav ul li {
+        float: none;
+    }
+    footer article {
+        width: 100%;
+        text-align: center;
+    }
 }

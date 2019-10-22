@@ -1,80 +1,118 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>layout</title>
-  <link href="../css/style.css" rel="stylesheet" type="text/css">
-  <script src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TulipTGR | Template</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/grid.css">
 </head>
 
 <body>
-  <div class="bg cl_bg_1">
-    <div class="container">
-      <div style="width: 100%; padding: 20px 0; overflow: hidden;">
-        <header>
-          <span>โลโก้</span>
-        </header>
+  <header>
+    <div class="wrap">
+      <div style="overflow: auto; padding: 5vh 0;">
+        <div class="logo">
+          <span>Logo</span>
+        </div>
         <nav>
           <ul>
-            <li><a href="template.html">รูปแบบ</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
           </ul>
         </nav>
-
       </div>
-      <div class="intro">
-        <div style="width: 40%; float: left;">
-          <h1>เกริ่นนำ</h1>
-          <p>โลเล็ม อิปซัม โปสเตอร์คอรัปชันอุปนายิกา ใช้งานกาญจน์โอเลี้ยง เปียโนมินต์ดาวน์บัลลาสต์คองเกรส </p>
+      <div style="overflow: auto; padding: 5vh 0;">
+        <article>
+          <h1>Intro</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quaerat.</p>
+        </article>
+        <section style="padding-top: calc(9/16*6/10*100%); background: darkgray;"></section>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="wrap">
+      <div class="grid-container">
+        <div class="g31" style="background: var(--color2); padding-top: 100%;">
+          <span style="margin-top: 45%;">content</span>
         </div>
-        <div class="divimg cl_bg_2">
-          <span style="position: absolute; top: 0; left: 0; right: 0; text-align: center;">ภาพ</span>
+        <div class="g32" style="background: var(--color2); padding-top: 100%;">
+          <span style="margin-top: 45%;">content</span>
+        </div>
+        <div class="g33" style="background: var(--color2); padding-top: 100%;">
+          <span style="margin-top: 45%;">content</span>
+        </div>
+        <div class="g31" style="background: var(--color2); padding-top: 100%;">
+          <span style="margin-top: 45%;">content</span>
+        </div>
+        <div class="g32" style="background: var(--color2); padding-top: 100%;">
+          <span style="margin-top: 45%;">content</span>
+        </div>
+        <div class="g33" style="background: var(--color2); padding-top: 100%;">
+          <span style="margin-top: 45%;">content</span>
+        </div>
+        <div class="g31" style="background: var(--color2); padding-top: 100%;">
+          <span style="margin-top: 45%;">content</span>
+        </div>
+        <div class="g32" style="background: var(--color2); padding-top: 100%;">
+          <span style="margin-top: 45%;">content</span>
+        </div>
+        <div class="g33" style="background: var(--color2); padding-top: 100%;">
+          <span style="margin-top: 45%;">content</span>
+        </div>
+        <div class="g21" style="background: var(--color2); padding-top: 50%;">
+          <span style="margin-top: 20%;">content</span>
+        </div>
+        <div class="g22" style="background: var(--color2); padding-top: 50%;">
+          <span style="margin-top: 20%;">content</span>
+        </div>
+        <div class="g1" style="background: var(--color2); padding-top: 15%;">
+          <span style="margin-top: 5%;">content</span>
         </div>
       </div>
     </div>
-  </div>
-  <div class="bg">
-    <div class="container" style="overflow: auto; padding: 5vh 0;">
-      <!-- CONTENT -->
-      <div style="overflow:hidden;">
-        <div class="g3 cl_bg_1"></div>
-        <div class="g3 g3m cl_bg_1"></div>
-        <div class="g3 cl_bg_1"></div>
+  </main>
+  <!-- END MAIN -->
 
-        <div class="g3 cl_bg_1"></div>
-        <div class="g3 g3m cl_bg_1"></div>
-        <div class="g3 cl_bg_1"></div>
-
-        <div class="g3 cl_bg_1"></div>
-        <div class="g3 g3m cl_bg_1"></div>
-        <div class="g3 cl_bg_1"></div>
-
-        <div class="g2 g2l cl_bg_1"></div>
-        <div class="g2 g2r cl_bg_1"></div>
-      </div>
-      <div class="g1 vh20 cl_bg_1"></div>
-      <!-- END CONTENT -->
+  <footer>
+    <div class="wrap">
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+        </ul>
+      </nav>
+      <article>
+        <p>Copyright</p>
+      </article>
     </div>
-  </div>
-  <div class="bg cl_bg_2">
-    <div class="container">
-      <footer>
-        <span>tuliptgr</span>
-      </footer>
-    </div>
-  </div>
+  </footer>
 </body>
+
 <style>
-  .g1 {
-    padding-top: 25%;
+  .grid-container>div {
+    position: sticky;
   }
 
-  .g2 {
-    padding-top: 20%;
-  }
-
-  .g3 {
-    padding-top: 30%;
+  .grid-container>div>span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2em;
   }
 </style>
 
