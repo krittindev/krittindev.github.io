@@ -8,33 +8,34 @@
     <title>TulipTGR | Welcome</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/grid.css">
+    <script src="../js/script.js"></script>
+    <style>
+        .tb24 {
+            width: 100%;
+        }
+        
+        .tb2 tr {
+            width: 100%;
+        }
+        
+        .tb2 td {
+            width: 25%;
+        }
+        
+        .num24 {
+            width: 80%;
+            font-size: 20em;
+        }
+    </style>
 </head>
 
 <body>
     <header style="background-image: linear-gradient(to bottom right, var(--color2), var(--color3));">
         <div class="wrap">
             <div style="overflow: auto; padding: 5vh 0;">
-                <div class="logo">
-                    <span>เสือ กฤติน</span>
+                <div class="logo" width="100%" align="center">
+                    <span>Math Gifted</span>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="../profile/index.html">เสือ</a></li>
-                        <li><a href="../secret/index.html">รหัสลับ</a></li>
-                        <li><a href="../24/index.html">เกม 24</a></li>
-                        <li><a href="../template/index.html">รูปแบบ</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div style="overflow: auto; padding: 5vh 0;">
-                <article>
-                    <h1>ยินดีต้อนรับ</h1>
-                    <br>
-                    <p>เข้าสู่เว็บซต์ของ เสือ กฤติน</p>
-                </article>
-                <section>
-                    <img src="../img/bg/AI.jpg" style="width: 100%;">
-                </section>
             </div>
         </div>
     </header>
@@ -42,33 +43,45 @@
     <!-- MAIN -->
     <main>
         <div class="wrap">
-            <br>
-            <H1 style="font-size: 2em;">เครื่องมือ</H1>
-            <br><br>
-            <ol>
-                <li style="font-size: 1.5em;">Visual Studio Code</li>
-                <br>
-                <img src="../img/vscode.png" style="width: 100%;">
+            <br><br><br><br>
+            <center>
+                <h1 style="font-size: 4em;">เกม 24</h1>
                 <br><br><br><br>
-                <li style="font-size: 1.5em;">Windows Terminal</li>
-                <br>
-                <img src="../img/terminal.png" style="width: 100%;">
-            </ol>
-            <br>
-            <br>
-            <br>
+                <button onclick="randomNumbers()" style="font-size: 3em;width:4em;">สุ่ม</button>
+                <br><br><br><br>
+            </center>
+            <table class="tb24">
+                <tr>
+                    <td align="center">
+                        <input name="num1" class="num24" id="num24_1" type="text ">
+                    </td>
+                    <td align="center">
+                        <input name="num2" class="num24" id="num24_2" type="text ">
+                    </td>
+                    <td align="center">
+                        <input name="num3" class="num24" id="num24_3" type="text ">
+                    </td>
+                    <td align="center">
+                        <input name="num4" class="num24" id="num24_4" type="text ">
+                    </td>
+                </tr>
+            </table>
+            <center>
+                <br><br><br><br>
+                <button onclick="solve24()" style="font-size: 2em;width:4em;">เฉลย</button>
+                <p id="solvenum24"></p>
+                <br><br><br><br>
+            </center>
         </div>
         </div>
     </main>
     <!-- END MAIN -->
 
-    <footer style="background-image: linear-gradient(to bottom right, var(--color2), var(--color3));">
-        <div class="wrap">
+    <footer style="background-image: linear-gradient(to bottom right, var(--color2), var(--color3)); ">
+        <div class="wrap ">
             <nav>
                 <ul>
-                    <li><a href="//profile/index.html">เสือ</a></li>
-                    <li><a href="//secret/index.html">รหัสลับ</a></li>
-                    <li><a href="//template/index.html">รูปแบบ</a></li>
+                    <li><a href="//24/index.html ">เกม 24</a></li>
                 </ul>
             </nav>
             <article>
