@@ -122,8 +122,22 @@ function solve24() {
     }
 }
 
+function perfect24() {
+    var a, b, c, d, p, q;
+    a = document.getElementById("num24_1").value;
+    b = document.getElementById("num24_2").value;
+    c = document.getElementById("num24_3").value;
+    d = document.getElementById("num24_4").value;
+    p = ((a == b) && (b == c)) || ((a == b) && (b == d)) || ((a == c) && (c == d)) || ((b == c) && (c == d));
+    q = (((a == 0) && (b == 0)) || ((a == 0) && (c == 0)) || ((a == 0) && (d == 0)) || ((b == 0) && (c == 0)) || ((b == 0) && (d == 0)) || ((c == 0) && (d == 0)));
+    if (p || q) {
+        return true;
+    }
+    return false;
+}
+
 function randomNumbers() {
-    while (document.getElementById("solvenum24").innerHTML == "") {
+    while (document.getElementById("solvenum24").innerHTML == "" || perfect24()) {
         document.getElementById("num24_1").value = rnd(10);
         document.getElementById("num24_2").value = rnd(10);
         document.getElementById("num24_3").value = rnd(10);
@@ -133,11 +147,41 @@ function randomNumbers() {
     document.getElementById("solvenum24").innerHTML = "";
 }
 
+
+
 function randomNumbers180() {
-    document.getElementById("num180_1").value = rnd(10);
-    document.getElementById("num180_2").value = rnd(10);
-    document.getElementById("num180_3").value = rnd(10);
-    document.getElementById("num180_4").value = rnd(10);
-    document.getElementById("num180_5").value = rnd(10);
+    var a, b, c, d, e, p;
+    a = rnd(10);
+    b = rnd(10);
+    c = rnd(10);
+    d = rnd(10);
+    e = rnd(10);
+    if ((a == 0 && b == 0) || (a == 0 && c == 0) || (a == 0 && d == 0) || (a == 0 && e == 0) || (b == 0 && c == 0) || (b == 0 && d == 0) || (b == 0 && e == 0) || (c == 0 && d == 0) || (c == 0 && e == 0) || (d == 0 && e == 0)) {
+        a = rnd(10);
+        b = rnd(10);
+        c = rnd(10);
+        d = rnd(10);
+        e = rnd(10);
+    }
+    document.getElementById("num180_1").value = a;
+    document.getElementById("num180_2").value = b;
+    document.getElementById("num180_3").value = c;
+    document.getElementById("num180_4").value = d;
+    document.getElementById("num180_5").value = e;
+}
+
+function randomNumbers1802() {
+    randomNumbers180();
+    document.getElementById("num180_solve").value = rnd(100);
+    while (Number(document.getElementById("num180_solve").value) < 10) {
+        document.getElementById("num180_solve").value = rnd(100);
+    }
+}
+
+function randomNumbers1803() {
+    randomNumbers180();
     document.getElementById("num180_solve").value = rnd(1000);
+    while (Number(document.getElementById("num180_solve").value) < 100) {
+        document.getElementById("num180_solve").value = rnd(1000);
+    }
 }
