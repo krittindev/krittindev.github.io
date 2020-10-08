@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header style="background-image: linear-gradient(to bottom right, var(--color2), var(--color3));">
+    <header>
         <div class="wrap">
             <div style="overflow: auto; padding: 5vh 0;">
                 <div class="logo">
@@ -38,26 +38,6 @@
             </div>
         </div>
     </header>
-
-    <!-- MAIN -->
-    <main>
-        <div class="wrap">
-        </div>
-    </main>
-    <!-- END MAIN -->
-
-    <footer style="background-image: linear-gradient(to bottom right, var(--color2), var(--color3));">
-        <div class="wrap">
-            <nav>
-                <ul>
-                    <li><a href="https://drive.google.com/open?id=1pBhxJo_bwe36jsLDduX6BXgiFvE0DTWc">mini-project</a></li>
-                </ul>
-            </nav>
-            <article>
-                <p>TulipTGR</p>
-            </article>
-        </div>
-    </footer>
 </body>
 
 <style>
@@ -66,7 +46,10 @@
         --color2: #232526;
         --color3: #414345;
     }
-    
+    header{
+        background-image: linear-gradient(to bottom right, var(--color2), var(--color3));
+        height: 100vh;
+    }
     header nav ul li a:hover {
         text-decoration: underline;
         color: yellowgreen;
