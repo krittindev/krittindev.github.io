@@ -95,7 +95,7 @@ export default function Home() {
             Wellcome To&nbsp;
             <code className={styles.code}>krittin.dev</code>
           </p>
-          <div className="h-24 flex flex-row gap-4 content-evenly">
+          <div className="h-24 flex flex-row flex-wrap gap-4 content-evenly">
             {socials.map(function(social, i){
               return <>
                 <a
@@ -106,7 +106,7 @@ export default function Home() {
                   <Image
                     src={social["src"]}
                     alt={social["alt"]}
-                    className={styles.vercelLogo}
+                    className={styles.socialLogo}
                     width={social["size"]}
                     height={social["size"]}
                     priority
