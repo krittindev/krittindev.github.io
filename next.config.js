@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: true
+    loader: 'imgix',
+    path: 'the "domain" of your Imigix source',
   },
 }
 
