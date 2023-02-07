@@ -18,7 +18,7 @@ var works = [
   },
   {
     "title": "24 Game",
-    "url": "https://krittin.dev/randominclass/",
+    "url": "https://krittin.dev/24game/",
     "description": "Random 24 Game Math Problem with Solution."
   },
   {
