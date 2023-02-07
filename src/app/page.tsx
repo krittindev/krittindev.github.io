@@ -9,21 +9,48 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          Wellcome To&nbsp;
+          <code className={styles.code}>krittin.dev</code>
         </p>
-        <div>
+        <div className="h-24 grid grid-cols-3 gap-4 content-evenly">
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://www.facebook.com/suea.krittin/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="/facebook.svg"
+              alt="Facebook Logo"
               className={styles.vercelLogo}
-              width={100}
+              width={24}
+              height={24}
+              priority
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/k_suea/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/instagram.svg"
+              alt="Instagram Logo"
+              className={styles.vercelLogo}
+              width={24}
+              height={24}
+              priority
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tuliptgr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/linkedin.svg"
+              alt="Linked in Logo"
+              className={styles.vercelLogo}
+              width={24}
               height={24}
               priority
             />
@@ -33,56 +60,55 @@ export default function Home() {
 
       <div className={styles.center}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
+          src="/profile.jpg"
+          alt="Profile"
           width={180}
-          height={37}
+          height={180}
           priority
         />
-        <div className={styles.thirteen}>
+        {/* <div className={styles.thirteen}>
           <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.grid}>
         <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://krittin.dev/faaim"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
+            Faaim <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
+            Count Date with JS libs.
           </p>
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://krittin.dev/randominclass/"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
+            Random in Class <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
+          <p className={inter.className}>Random Complex Sequence with JS libs.</p>
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://krittin.dev/24game/"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
+            24 Game <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Random 24 Game Math Problem with Solution.
           </p>
         </a>
       </div>
