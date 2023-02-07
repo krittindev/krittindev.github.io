@@ -240,7 +240,7 @@
   .description div {
     align-items: flex-end;
     inset: auto 0 0;
-    padding: 2rem;
+    padding-top: 2rem;
     height: 200px;
     background: linear-gradient(
       to bottom,
