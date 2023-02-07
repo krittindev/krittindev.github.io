@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 
-const repo = 'tuliptgr.github.io'
-const assetPrefix = `/${repo}/`
-const basePath = `/${repo}`
+const isGithubActions = process.env.GITHUB_ACTIONS || false
 
-module.exports = {
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+let assetPrefix = ''
+let basePath = '/'
+
+if (isGithubActions) {
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+
+  assetPrefix = `/${repo}/`
+  basePath = `/${repo}`
 }
