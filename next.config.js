@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
+module.exports = {
+  assetPrefix: isProd ? 'tuliptgr.github.io' : '',
+  images: {
+    unoptimized: true,
   },
 }
-
-module.exports = nextConfig
