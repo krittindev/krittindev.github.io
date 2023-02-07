@@ -2,8 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    loader: 'imgix',
-    path: 'the "domain" of your Imigix source',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'krittin.dev',
+        port: '',
+        pathname: '/img/**',
+      },
+    ],
   },
 }
 
