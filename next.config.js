@@ -16,4 +16,7 @@ if (isGithubActions) {
 module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
+  experimental: {
+    appDir: true,
+  },
 }
